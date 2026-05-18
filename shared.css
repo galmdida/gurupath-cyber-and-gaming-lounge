@@ -1,0 +1,264 @@
+/* html{
+    padding: 0;
+    margin: 0;
+} */
+body {
+    padding: 0px;
+    margin: 0px;
+
+    font-family: "Yantramanav", sans-serif;
+    background: #ecebeb;
+    color: rgb(58, 58, 58);
+}
+
+body p {
+    line-height: 1.5;
+    /* inclease the spaces between lines  */
+}
+
+/* Style contact section in the nav */
+#nav-contact {
+    background: rgb(161, 161, 182);
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-contact ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0 3rem 0 3rem;
+    padding: 0px;
+}
+
+#nav-contact ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-contact ul li p {
+    margin-left: 0.5rem;
+    color: rgb(6, 122, 6);
+}
+
+
+header {
+    background: rgb(37, 37, 37);
+    padding: 0 3rem 0 0;
+    top: 0;
+    /* Position the navbar at the top of the page */
+    position: sticky;
+    /* Sticky is better than fixed as it keeps the upper part of the header visible when scrolled up */
+    width: 100%;
+    /* Full width */
+    overflow: hidden;
+    z-index: 100;
+    /* To avoid any element from overlying nav */
+}
+
+.logo img {
+    height: 3rem;
+    width: 8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin-left: 0.6rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 0.6rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0.3rem 0.2rem;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: rgb(66, 65, 65);
+}
+
+header .btn {
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+/* Modify footer */
+footer {
+    background-color: black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+footer p {
+    text-align: center;
+    color: azure;
+}
+
+/*************************** Making responsive */
+/* On small screen do not show nav-contact */
+@media(max-width: 768px) {
+    #nav-contact {
+        display: none;
+    }
+
+    footer {
+    padding-bottom: 0.5rem;
+}
+}
+
+@media(max-width: 768px) {
+    header {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    header .btn {
+        display: block;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 18.75rem;
+        height: 100vh;
+        background: gray;
+        top: 2.0rem;
+        left: 100%;
+        /* We are hidding it */
+        padding: 5rem 0rem;
+        transition: all 0.8s ease-in;
+    }
+
+    nav ul.display {
+        left: 0px;
+        transition: all 0.8s ease-in-out;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 10px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 0rem;
+        left: 15rem;
+        margin: 1.5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    footer {
+        height: 4rem;
+        padding-top: 2.5px;
+        margin: 0.5rem;
+    }
+}
+
+/************************************** Lets start with jumbo */
+@media(max-width: 768px) {
+    #jumbo {
+        height: 30rem;
+        background-image: url(images/interior.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+}
+
+
+/****************************** Next jumbo content */
+/* Ipad and tablets */
+@media(max-width: 768px) {
+    #jumbo-content {
+        width: 29rem;
+        margin-top: 5rem;
+    }
+}
+
+/* Mobile phones */
+@media(max-width: 480px) {
+    #jumbo-content {
+        position: static;
+        margin-left: 2rem;
+        width: 19rem;
+        margin-top: 5rem;
+        padding: 5px 0 10px 0;
+        height: auto;
+    }
+
+    #jumbo-content p {
+        margin-bottom: 2px;
+    }
+
+    #jumbo-content #btn1 {
+        margin-top: 10px;
+    }
+
+    a {
+        display: block;
+        /* So that we can form margin */
+        width: 50%;
+        /* So that we can shorten the button */
+        margin: 1rem auto;
+        /* So that we can center the button */
+    }
+
+}
+
+/* Very small screen */
+@media(max-width: 319px) {
+    #jumbo {
+        padding: 2px;
+    }
+
+    #jumbo-content {
+        width: 14.5rem;
+        padding: 0;
+    }
+
+    #jumbo-content p {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+}

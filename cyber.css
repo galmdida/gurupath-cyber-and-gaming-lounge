@@ -1,0 +1,464 @@
+#jumbo{
+    height: 30rem;
+    background-image: url(images/interior.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* The width of the element is smaller than the page, so set */
+/* add background color close to black with transparency rgba */
+/* add box-shadow, left to righ, top to bottom, radius, color */
+/* Border radius to have rounded corner of 8px */
+/* Text align to center */
+/* Padding top and bottom; left and right is not required */
+/* Center the block element with margin */
+
+/* Positioning element with position - we have static and relative positions */
+/* The use top or right to move hero-content*/
+#jumbo-content {
+    width: 37.5rem;
+    background-color: rgba(50, 40, 40, 0.8);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10.62rem;
+}
+
+/* Now, lets style jumbo-content */
+/* Make the color of h1 white */
+/* Increase h1 font size */
+/* change h1 font family */
+/* Remove default margin */
+#jumbo-content h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Paragraph */
+/* Change font color to white */
+#jumbo-content p {
+    color: white;
+}
+
+/* Make anchor tag a button */
+/* Small padding top and bottom, larger padding left and right */
+#jumbo-content a {
+    text-decoration: none;
+    background-color: #ffc100;
+    padding: 6px 12px;
+    color: green;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px black;
+}
+
+/* Add hover effect to our button */
+#jumbo-content a:hover {
+    background-color: #ff7400;
+}
+
+
+#servicesOverview h1{
+    text-align: center;
+}
+
+#traditionalCyberServices{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#traditionalCyberServices ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#traditionalCyberServices ul li{
+    text-align: center;
+}
+
+.tradService{
+    font-weight: 600;
+}
+
+ .cyberImage{
+    width: 7rem;
+    height: 5.5rem;
+    border-radius: 4px;
+    
+ }
+
+ .descCostReq span{
+    background-color: rgb(44, 119, 148);
+    border-radius: 4px;
+    padding: 0.3rem 0.4rem;
+ }
+
+ #onlineServices{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ #accountManagement ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+ }
+
+  #accountManagement ul li{
+    text-align: center;
+  }
+
+  .onlineService{
+    font-weight: 600;
+  }
+
+#KraPinCreation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#KraPinCreation ul li{
+    text-align: center;
+}
+
+#kraPinRetrival ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#kraPinRetrival ul li{
+    text-align: center;
+}
+
+#kraReturns ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#kraReturns ul li{
+    text-align: center;
+}
+
+#eTims ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#eTims ul li{
+    text-align: center;
+}
+
+#complianceCert ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#complianceCert ul li{
+    text-align: center;
+}
+
+#ntsaServices ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#ntsaServices ul li{
+    text-align: center;
+}
+
+#ecitizen ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#ecitizen ul li{
+    text-align: center;
+}
+
+#kuccps ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+#kuccps ul li{
+    text-align: center;
+}
+
+/************************************** Lets start with jumbo */
+@media(max-width: 768px) {
+    #jumbo {
+        height: 30rem;
+        background-image: url(images/interior.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+}
+
+
+/****************************** Next jumbo content */
+/* Ipad and tablets */
+@media(max-width: 768px) {
+    #jumbo-content {
+        width: 29rem;
+        margin-top: 5rem;
+    }
+}
+
+/* Mobile phones */
+@media(max-width: 480px) {
+    #jumbo-content {
+        position: static;
+        margin-left: 2rem;
+        width: 19rem;
+        margin-top: 5rem;
+        padding: 5px 0 10px 0;
+        height: auto;
+    }
+
+    #jumbo-content p {
+        margin-bottom: 2px;
+    }
+
+    #jumbo-content #btn1 {
+        margin-top: 10px;
+    }
+
+    a {
+        display: block;
+        /* So that we can form margin */
+        width: 50%;
+        /* So that we can shorten the button */
+        margin: 1rem auto;
+        /* So that we can center the button */
+    }
+
+}
+
+/* Very small screen */
+@media(max-width: 319px) {
+    #jumbo {
+        padding: 2px;
+    }
+
+    #jumbo-content {
+        width: 14.5rem;
+        padding: 0;
+    }
+
+    #jumbo-content p {
+        margin-top: 0;
+        font-size: 1.3rem;
+    }
+}
+
+
+/*********************************** Service overview */
+@media(max-width: 768px) {
+    #traditionalCyberServices {
+        margin: 1rem auto 1rem auto;
+        text-align: center;
+        /* To make ul center but add inline block to ul */
+    }
+
+    #traditionalCyberServices ul {
+        display: inline-block;
+        /*make it centre within the card as desc above */
+        width: 90%;
+    }
+
+    #traditionalCyberServices ul li {
+        margin-top: 1rem;
+    }
+}
+
+
+
+/******************************** Highlight online cyber services */
+@media(max-width: 768px) {
+#onlineServices {
+        margin: 1rem auto 1rem auto;
+        text-align: center;
+        /* To make ul center but add inline block to ul */
+    }
+
+    #onlineServices ul {
+        display: inline-block;
+        /*make it centre within the card as desc above */
+        width: 90%;
+    }
+
+    #onlineServices ul li {
+        margin-top: 1rem;
+    }
+}
+
+/************************************** Style rooms sections */
+@media(max-width:768px) {
+    #rooms {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #rooms-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/bed-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    #room-content {
+        width: 18rem;
+        margin-top: 12rem;
+    }
+
+    .room-content {
+        text-align: center;
+    }
+
+    .room-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .end-btn {
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    #food {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #food-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/food-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    #food-content {
+        width: 18rem;
+        margin-top: 12rem;
+    }
+
+    .food-content {
+        text-align: center;
+    }
+
+    .food-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+
+    .end-btn {
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    #conference {
+        width: 90%;
+        margin: 0 auto;
+        /* Centre contents */
+        display: block;
+        text-align: center;
+    }
+
+    #conference-img {
+        height: 18rem;
+        width: 19.5rem;
+        background-image: url(images/conference-img.PNG);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .conference-content {
+        text-align: center;
+    }
+
+    .conference-content a{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .end-btn {
+        display: inline-block;
+    }
+}
