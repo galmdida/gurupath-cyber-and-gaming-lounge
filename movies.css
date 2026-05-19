@@ -1,0 +1,167 @@
+#jumbo {
+    height: 30rem;
+    background-image: url(images/interior.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* The width of the element is smaller than the page, so set */
+/* add background color close to black with transparency rgba */
+/* add box-shadow, left to righ, top to bottom, radius, color */
+/* Border radius to have rounded corner of 8px */
+/* Text align to center */
+/* Padding top and bottom; left and right is not required */
+/* Center the block element with margin */
+
+/* Positioning element with position - we have static and relative positions */
+/* The use top or right to move hero-content*/
+#jumbo-content {
+    width: 37.5rem;
+    background-color: rgba(50, 40, 40, 0.8);
+    box-shadow: 2px 4px 8px rgb(70, 60, 60);
+    border-radius: 8px;
+    text-align: center;
+    padding: 0.9rem 0;
+    margin: 0 auto;
+    position: relative;
+    top: 10.62rem;
+}
+
+/* Now, lets style jumbo-content */
+/* Make the color of h1 white */
+/* Increase h1 font size */
+/* change h1 font family */
+/* Remove default margin */
+#jumbo-content h1 {
+    color: white;
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+/* Paragraph */
+/* Change font color to white */
+#jumbo-content p {
+    color: white;
+}
+
+/* Make anchor tag a button */
+/* Small padding top and bottom, larger padding left and right */
+#jumbo-content a {
+    text-decoration: none;
+    background-color: #ffc100;
+    padding: 6px 12px;
+    color: green;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px black;
+}
+
+/* Add hover effect to our button */
+#jumbo-content a:hover {
+    background-color: #ff7400;
+}
+
+#servicesOverview {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#servicesOverview h1 {
+    text-align: center;
+}
+
+#servicesList {
+    margin: 0px;
+    padding: 0px;
+
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mainList {
+    text-align: center;
+
+    height: 70rem;
+    box-shadow: 1px 2px 3px black;
+
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 6PX;
+    padding: 0.5rem;
+}
+
+.service-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.movieList{
+    list-style-type: lower-roman;
+}
+
+.movieList li{
+    line-height: 120%;
+    padding: 0.5rem;
+}
+
+.serviceImg {
+    height: 8rem;
+    width: 8rem;
+
+    border-radius: 6px;
+}
+
+.movie{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.serviceLink {
+    display: block;
+    margin-top: 2rem;
+    text-decoration: none;
+    color: rgb(28, 119, 119);
+}
+
+.serviceLink:hover {
+    background-color: rgb(66, 202, 202);
+    box-shadow: 2px 2px 2px black;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%;
+    padding: 0.2rem 0px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    #servicesOverview {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #servicesList {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .mainList {
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    height: auto;
+}
+}
